@@ -95,6 +95,9 @@
     .form_area{
         display: none;
     }
+    /* .laptop-pic{
+        display: none;
+    } */
 }
 
 @media(max-width: 818px){
@@ -219,7 +222,7 @@
     text-decoration: underline;
 }
 .skills{
-    padding: 30px 70px !important;
+    padding: 30px 130px !important;
 }
 .icon-place{
     margin: 20px;
@@ -240,5 +243,52 @@
 }
 .box2{
     box-shadow: 0 0 20px #e3e3e3;
+}
+.achieve{
+    text-transform: capitalize;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.learn{
+    padding: 80px 130px !important;
+    background-color: rgb(242, 234, 188);
+}
+.laptop-pic{
+    height: 500px !important;
+    width: 100%;
+    border-radius: 10px;
+}
+.left{
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+.left h2{
+    text-transform: capitalize;
+    font-size: 39px;
+    margin-bottom: 20px;
+}
+.left p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.left ul li{
+    list-style: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.left ul li i{
+    margin-right: 20px;
+    font-size: 23px;
+    color: rgb(168, 149, 40);
+}
+.learn-btn{
+    background: rgb(124, 124, 124) !important;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    margin-top: 10px !important;
+    
 }
 
