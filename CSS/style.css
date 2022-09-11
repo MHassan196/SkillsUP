@@ -242,7 +242,7 @@
     box-shadow: 0 0 2px #e3e3e3;
 }
 .box2{
-    box-shadow: 0 0 20px #e3e3e3;
+    box-shadow: 0 0 20px #c8c8c8;
 }
 .achieve{
     text-transform: capitalize;
@@ -290,5 +290,19 @@
     padding: 10px 20px !important;
     margin-top: 10px !important;
     
+}
+.course{
+    padding: 40px 130px !important;
+}
+.lat{
+    letter-spacing: 1px;
+    font-size: 39px;
+}
+.card-img-top{
+    height: 230px;
+}
+.enroll{
+    background: rgb(124, 124, 124) !important;
+    border: none !important;
 }
 
