@@ -1,0 +1,244 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    background-image: url("/header.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.navigation {
+    background: transparent;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100vw;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+.search-btn{
+    border: 1px solid  rgb(179, 163, 73) !important;
+    color: rgb(179, 163, 73) !important;
+}
+.search-btn:hover{
+    background-color: rgb(179, 163, 73) !important;
+    color: #000000 !important;
+}
+
+.banner {
+    padding: 40px;
+}
+
+.heading {
+    text-transform: capitalize;
+    color: rgb(201, 201, 201);
+    font-size: 51px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.heading span {
+    color: rgb(179, 163, 73);
+}
+
+.text {
+    color: #fff;
+    font-size: 30px;
+    font-style: oblique;
+    margin-top: 20px;
+    letter-spacing: 2px;
+
+}
+/* .navbar-collapse{
+    padding: 0 20px 10px 20px;
+    background: rgb(63, 63, 63);
+    opacity: 0.95;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    z-index: 2;
+} */
+.sign{
+    border: 2px solid rgb(179, 163, 73) !important;
+    color: rgb(179, 163, 73) !important;
+}
+.sign:hover{
+    background-color: rgb(179, 163, 73) !important;
+    color: #000000 !important;
+}
+@media(max-width: 1187px){
+    .heading{
+        font-size: 46px;
+    }
+    .text{
+        font-size: 27px;
+    }
+}
+@media(max-width: 1086px){
+    .heading{
+        font-size: 41px;
+    }
+    .text{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 991.5px){
+    .form_area{
+        display: none;
+    }
+}
+
+@media(max-width: 818px){
+    .heading{
+        font-size: 40px;
+    }
+    .text{
+        font-size: 22px !important;
+    }
+    .btns button{
+        padding: 15px 0 !important;
+
+    }
+}
+
+@media(max-width: 571px){
+    .btns button{
+        width: 50% !important;
+        padding: 10px 0 !important;
+    }
+}
+@media(max-width: 456px){
+    .heading{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 18px !important;
+    }
+}
+@media(min-width: 992px){
+    .offcanvas{
+        display: none !important;
+    }
+}
+
+.btns {
+    margin-top: 10px;
+}
+
+.btns button {
+    width: 33%;
+    background: rgb(201, 201, 201);
+    height: auto;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.offcanvas{
+    padding: 10px 20px;
+    background-color: rgb(62, 62, 62) !important;
+    opacity: 0.9;
+}
+.sign-btns{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.get {
+    background-color: rgb(179, 163, 73) !important;
+}
+
+.btns button:hover {
+    background-color: rgb(201, 201, 201);
+    opacity: 0.9;
+}
+
+.form {
+    padding: 20px;
+    background: rgb(50, 50, 50);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 2px solid rgb(179, 163, 73);
+    opacity: 0.8;
+    
+}
+
+
+.form h3 {
+    color: rgb(179, 163, 73);
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.form label{
+    color: #fff;
+}
+.form input{
+    border: none;
+}
+.form p{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 18px;
+    text-transform:capitalize;
+    font-weight: 600;
+}
+.signup{
+    padding: 10px 0 !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    background-color: rgb(179, 163, 73) !important;
+    border: none !important;
+
+}
+.signup:hover{
+    opacity: 0.9 !important;
+}
+.google{
+    background-color: rgb(201, 201, 201) !important;
+}
+.login a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.login a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.skills{
+    padding: 30px 70px !important;
+}
+.icon-place{
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(242, 234, 188);
+    width: fit-content;
+    height: auto;
+    padding: 15px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.box, .box2{
+    border: none !important;
+    box-shadow: 0 0 2px #e3e3e3;
+}
+.box2{
+    box-shadow: 0 0 20px #e3e3e3;
+}
+
