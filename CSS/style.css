@@ -1,3 +1,12 @@
+:root{
+    --primary-color: rgb(166, 148, 57);
+    --secondary-color: rgb(151, 151, 151);
+    --light-primary: rgb(235, 222, 161);
+    --light-secondary: rgb(192, 192, 192);
+    --black: #000000;
+    --white: #ffffff;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,12 +30,12 @@
     flex-grow: 0 !important;
 }
 .search-btn{
-    border: 1px solid  rgb(179, 163, 73) !important;
-    color: rgb(179, 163, 73) !important;
+    border: 1px solid  var(--primary-color) !important;
+    color: var(--primary-color) !important;
 }
 .search-btn:hover{
-    background-color: rgb(179, 163, 73) !important;
-    color: #000000 !important;
+    background-color: var(--primary-color) !important;
+    color: var(--black)!important;
 }
 
 .banner {
@@ -35,18 +44,18 @@
 
 .heading {
     text-transform: capitalize;
-    color: rgb(201, 201, 201);
+    color: var(--secondary-color);
     font-size: 51px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .heading span {
-    color: rgb(179, 163, 73);
+    color: var(--primary-color);
 }
 
 .text {
-    color: #fff;
+    color: var(--white);
     font-size: 30px;
     font-style: oblique;
     margin-top: 20px;
@@ -67,12 +76,12 @@
     z-index: 2;
 } */
 .sign{
-    border: 2px solid rgb(179, 163, 73) !important;
-    color: rgb(179, 163, 73) !important;
+    border: 2px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
 }
 .sign:hover{
-    background-color: rgb(179, 163, 73) !important;
-    color: #000000 !important;
+    background-color: var(--primary-color) !important;
+    color: var(--black) !important;
 }
 @media(max-width: 1187px){
     .heading{
@@ -139,7 +148,7 @@
 
 .btns button {
     width: 33%;
-    background: rgb(201, 201, 201);
+    background: var(--secondary-color);
     height: auto;
     padding: 20px 0;
     margin-bottom: 10px;
@@ -158,41 +167,41 @@
 }
 
 .get {
-    background-color: rgb(179, 163, 73) !important;
+    background-color: var(--primary-color) !important;
 }
 
 .btns button:hover {
-    background-color: rgb(201, 201, 201);
+    background-color: var(--secondary-color);
     opacity: 0.9;
 }
 
 .form {
-    padding: 20px;
+    padding: 10px 20px;
     background: rgb(50, 50, 50);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.8px);
     -webkit-backdrop-filter: blur(4.8px);
-    border: 2px solid rgb(179, 163, 73);
+    border: 2px solid var(--primary-color);
     opacity: 0.8;
     
 }
 
 
 .form h3 {
-    color: rgb(179, 163, 73);
+    color: var(--primary-color);
     text-transform: capitalize;
     font-weight: bold;
     margin-bottom: 20px;
 }
 .form label{
-    color: #fff;
+    color: var(--white);
 }
 .form input{
     border: none;
 }
 .form p{
-    color: #fff;
+    color: var(--white);
     margin-top: 15px;
     font-size: 18px;
     text-transform:capitalize;
@@ -202,7 +211,7 @@
     padding: 10px 0 !important;
     font-size: 18px !important;
     font-weight: bold !important;
-    background-color: rgb(179, 163, 73) !important;
+    background-color: var(--primary-color) !important;
     border: none !important;
 
 }
@@ -210,15 +219,15 @@
     opacity: 0.9 !important;
 }
 .google{
-    background-color: rgb(201, 201, 201) !important;
+    background-color: var(--secondary-color) !important;
 }
 .login a{
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     text-transform: capitalize;
 }
 .login a:hover{
-    color: #fff;
+    color: var(--white);
     text-decoration: underline;
 }
 .skills{
@@ -227,7 +236,7 @@
 .icon-place{
     margin: 20px;
     border-radius: 5px;
-    background-color: rgb(242, 234, 188);
+    background-color: var(--light-primary);
     width: fit-content;
     height: auto;
     padding: 15px;
@@ -252,7 +261,7 @@
 }
 .learn{
     padding: 80px 130px !important;
-    background-color: rgb(242, 234, 188);
+    background-color: var(--light-primary);
 }
 .laptop-pic{
     height: 500px !important;
@@ -282,14 +291,13 @@
 .left ul li i{
     margin-right: 20px;
     font-size: 23px;
-    color: rgb(168, 149, 40);
+    color: var(--primary-color);
 }
 .learn-btn{
-    background: rgb(124, 124, 124) !important;
-    color: #fff !important;
+    background: var(--secondary-color) !important;
+    color: var(--white) !important;
     padding: 10px 20px !important;
     margin-top: 10px !important;
-    
 }
 .course{
     padding: 40px 130px !important;
@@ -302,7 +310,55 @@
     height: 230px;
 }
 .enroll{
-    background: rgb(124, 124, 124) !important;
+    background: var(--primary-color) !important;
     border: none !important;
 }
 
+.cour{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.event{
+    padding: 40px 130px !important;
+    background-color: var(--light-primary);
+}
+.event-img{
+    padding: 10px;
+    border-radius: 14px !important;
+}
+.sub{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.loc i{
+    color: var(--primary-color);
+}
+.date i{
+    color: var(--primary-color);
+}
+.rev-box{
+    width: 300px;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    height: auto;
+    min-height: 250px;
+    min-width: 300px;
+    background-color: var(--light-secondary);
+}
+#reviews{
+    overflow-x: hidden;
+}
+.fa-star{
+    color: var(--secondary-color);
+}
+.checked{
+    color: var(--primary-color);
+}
+.review-btn{
+    background-color: var(--primary-color) !important;
+}
