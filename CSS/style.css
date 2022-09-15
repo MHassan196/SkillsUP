@@ -482,3 +482,39 @@
     border: none !important;
     font-size: 1.2rem;
 }
+
+/* About section  */
+.about{
+    padding: 50px 60px;
+    background-color: var(--light-primary);
+}
+.ab-head{
+    letter-spacing: 2px;
+    font-size: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ab-para{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.ab-btn{
+    background-color: var(--primary-color);
+    padding: 18px 70px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white);
+}
+.ab-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    box-shadow: 5px 5px 10px var(--secondary-color);
+}
+.hist-head{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.hist-para{
+    font-size: 1.2rem;
+}
