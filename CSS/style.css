@@ -518,3 +518,36 @@
 .hist-para{
     font-size: 1.2rem;
 }
+.video{
+    width: 100%;
+}
+
+/* Contact page  */
+.contact{
+    padding: 50px 60px;
+    background-color: var(--light-primary);
+}
+.cont-head{
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.fa-phone, .fa-envelope, .fa-map-marker-alt{
+    color: var(--primary-color);
+}
+.phone, .email, .address{
+    font-size: 1.1em;
+}
+.send{
+    background-color: var(--secondary-color);
+    padding: 15px 60px;
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: bold;
+}
+.send:hover{
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--white);
+}
