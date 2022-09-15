@@ -12,7 +12,7 @@
 }
 
 .top {
-    background-image: url("/header.png");
+    background-image: url("/img/header.png");
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -39,7 +39,7 @@
 }
 
 .banner {
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 .heading {
@@ -83,6 +83,11 @@
     background-color: var(--primary-color) !important;
     color: var(--black) !important;
 }
+@media(max-width: 1350px){
+    .form{
+        padding: 5px 10px !important;
+    }
+}
 @media(max-width: 1187px){
     .heading{
         font-size: 46px;
@@ -107,6 +112,7 @@
     /* .laptop-pic{
         display: none;
     } */
+    
 }
 
 @media(max-width: 818px){
@@ -231,7 +237,7 @@
     text-decoration: underline;
 }
 .skills{
-    padding: 30px 130px !important;
+    padding: 30px 80px !important;
 }
 .icon-place{
     margin: 20px;
@@ -260,7 +266,7 @@
     font-weight: 600;
 }
 .learn{
-    padding: 80px 130px !important;
+    padding: 80px 80px !important;
     background-color: var(--light-primary);
 }
 .laptop-pic{
@@ -274,23 +280,27 @@
 }
 .left h2{
     text-transform: capitalize;
-    font-size: 39px;
+    /* font-size: 39px; */
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 .left p{
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.2rem;
     letter-spacing: 1px;
     margin-bottom: 30px;
 }
 .left ul li{
     list-style: none;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.2rem;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
 .left ul li i{
     margin-right: 20px;
-    font-size: 23px;
+    /* font-size: 23px; */
+    font-size: 1.3rem;
     color: var(--primary-color);
 }
 .learn-btn{
@@ -300,7 +310,7 @@
     margin-top: 10px !important;
 }
 .course{
-    padding: 40px 130px !important;
+    padding: 40px 80px !important;
 }
 .lat{
     letter-spacing: 1px;
@@ -317,11 +327,12 @@
 .cour{
     font-weight: 600;
     text-transform: capitalize;
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 2.2rem;
     letter-spacing: 1px;
 }
 .event{
-    padding: 40px 130px !important;
+    padding: 40px 80px !important;
     background-color: var(--light-primary);
 }
 .event-img{
@@ -364,7 +375,7 @@
 
 }
 .main-join{
-    padding: 100px 130px !important;
+    padding: 100px 80px !important;
 }
 .join{
     flex-direction: column;
@@ -375,19 +386,23 @@
 .join-head{
     text-transform: capitalize;
     margin-bottom: 30px;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 2.4rem;
     letter-spacing: 2px;
+    text-align: center;
 
 }
 .join-para{
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.2rem;
     letter-spacing: 2px;
     margin-bottom: 30px;
+    text-align: center;
 }
 .footer{
-    background-image: url('/bghead.jpg');
+    background-image: url('/img/bghead.jpg');
     color: var(--white);
-    padding: 60px 130px 30px 220px !important;
+    padding: 60px 130px 30px 130px !important;
 }
 
 .footer h3{
@@ -413,6 +428,7 @@
 }
 .copyright p{
     color: var(--secondary-color);
+    font-size: 1rem;
 }
 .social-links a{
     padding: 15px;
