@@ -1,7 +1,7 @@
 :root{
     --primary-color: rgb(166, 148, 57);
     --secondary-color: rgb(151, 151, 151);
-    --light-primary: rgb(235, 222, 161);
+    --light-primary: rgb(233, 222, 176);
     --light-secondary: rgb(192, 192, 192);
     --black: #000000;
     --white: #ffffff;
@@ -24,6 +24,9 @@
     justify-content: space-between !important;
     align-items: center !important;
     width: 100vw;
+}
+.other-nav{
+    background-image: url('/img/header.png');
 }
 
 .navbar-collapse {
@@ -258,7 +261,9 @@
 }
 .box2{
     box-shadow: 0 0 20px #c8c8c8;
+    transition: .2s ease-in-out;
 }
+
 .achieve{
     text-transform: capitalize;
     font-size: 35px;
@@ -364,9 +369,8 @@
 #reviews{
     overflow-x: hidden;
 }
-.fa-star{
-    color: var(--secondary-color);
-}
+
+
 .checked{
     color: var(--primary-color);
 }
@@ -440,4 +444,41 @@
 .social-links a:hover{
     color: var(--white);
 
+}
+/* Courses page CSS */
+.courses-page{
+    padding: 40px 10px;
+    overflow-x: hidden;
+    background-color: var(--light-primary);
+}
+.filter-head{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.filter-col{
+    border-right: 1px solid var(--primary-color);
+}
+.course-section h3{
+    font-size: 2.3rem;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.course-section{
+    padding: 0 20px;
+}
+.active{
+    border: none;
+    color: var(--primary-color) !important;
+}
+.filt-btn{
+    font-size: 1.1rem;
+    border: none;
+    background: transparent;
+    transition: .1s ease-in;
+}
+.filt-btn:hover{
+    border: none !important;
+    font-size: 1.2rem;
 }

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Codewithme</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container-fluid sticky-top">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark navigation other-nav">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#"><img src="img//logo.png" alt=""></a>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="courses.html">Courses</a>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Resources
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Articles</a></li>
+                                    <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                    <!-- Mobile Menu Starts -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link links active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link links dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Resources
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item" href="#">Articles</a></li>
+                                    <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item sign-btns">
+                                <button class="btn sign">Sign Up</button>
+                                <button class="btn sign">Login</button>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <!-- Mobile Menu Ends -->
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid courses-page">
+        <div class="row">
+            <div class="col-lg-3 filter-col ">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="nav flex-column me-3 ">
+                        <h3 class="filter-head">Filter by course Category</h3>
+                        <button class="active filt-btn mb-4" id="all">Show All</button>
+                        <button class="filt-btn mb-4" id="web">Web Development</button>
+                        <button class="filt-btn mb-4" id="app">Application Development</button>
+                        <button class="filt-btn mb-4" id="soft">Software Development</button>
+                        <button class="filt-btn mb-4" id="ecom">E-Commerce</button>
+                        <button class="filt-btn mb-4" id="marke">Marketing</button>
+                        <button class="filt-btn mb-4" id="graph">Graphic Designing</button>
+                        <button class="filt-btn mb-4" id="comp">Basic Computer Courses</button>
+                        <button class="filt-btn mb-4" id="free">Freelancing Courses</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 course-section">
+                <h3>Courses</h3>
+                <div class="row" id="parent">
+                    <div class="col-md-6 col-lg-4 web courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/php.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">PHP Complete Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa fa-star-half-full checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 free courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/fiverr.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fiverr Complete Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 app courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/andriod.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Android Application Development</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa fa-star-half-full checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 marke courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/social.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media Marketing</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-full checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 ecom courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/amazon.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Amazon DropShipping</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa fa-star-half-full checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 soft courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/c++.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">C++ Complete Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 comp courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/office.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">MS Office</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 web soft courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/python.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Python Programming</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 marke courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/digi.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Markrting</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 ecom free courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/shopify.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Shopify DropShipping & Fiverr</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa fa-star-half-full checked"></i>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 free courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/upwork.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">UpWork Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 comp courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/excel.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Master In MS Excel</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa fa-star-half-full checked"></i>
+                                        <i class="fa-regular fa-star checked"></i>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 soft app courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/java.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Java Complete Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 soft web courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/javascript.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa fa-star-half-full checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 web courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/html.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML CSS & JavaScript</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa fa-star-half-full checked"></i>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 graph courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/photoshop.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Adobe Photoshop</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 web courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/word.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">WordPress Complete Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 web app courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/seo.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Search Engine Optimization</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 web courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/web.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Master In Web Development</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 app courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/flutter.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">App Development By Flutter</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 graph courses-en">
+                        <div class="card mb-3 box2">
+                            <img src="img/premier.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Adobe Premier Pro</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href="#" class="btn btn-primary enroll">Enroll Now</a>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <i class="fa-regular fa-star checked"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid course footer">
+        <div class="row in-footer">
+            <div class="col-md-6 col-lg-3">
+                <h3>Company</h3>
+                <ul class="foot-list">
+                    <a href="">
+                        <li>About</li>
+                    </a>
+                    <a href="">
+                        <li>Resources</li>
+                    </a>
+                    <a href="">
+                        <li>Pricing</li>
+                    </a>
+                    <a href="">
+                        <li>Blogs</li>
+                    </a>
+                    <a href="">
+                        <li>Affiliates</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h3>Community</h3>
+                <ul class="foot-list">
+                    <a href="">
+                        <li>Go Premium</li>
+                    </a>
+                    <a href="">
+                        <li>Team Plans</li>
+                    </a>
+                    <a href="">
+                        <li>Refer a Friend</li>
+                    </a>
+                    <a href="">
+                        <li>Gift Cards</li>
+                    </a>
+                    <a href="">
+                        <li>Scholarships</li>
+                    </a>
+                    <a href="">
+                        <li>Free Classes</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h3>Teaching</h3>
+                <ul class="foot-list">
+                    <a href="">
+                        <li>Become a Teacher</li>
+                    </a>
+                    <a href="">
+                        <li>Teaching Academy</li>
+                    </a>
+                    <a href="">
+                        <li>Teacher Handbook</li>
+                    </a>
+                    <a href="">
+                        <li>Partnerships</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h3>Support</h3>
+                <ul class="foot-list">
+                    <a href="">
+                        <li>Support</li>
+                    </a>
+                    <a href="">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="">
+                        <li>System Requirements</li>
+                    </a>
+                    <a href="">
+                        <li>Register Activation Key</li>
+                    </a>
+                    <a href="">
+                        <li>Site feedback</li>
+                    </a>
+                </ul>
+            </div>
+            <hr class="mt-4">
+            <div class="d-flex justify-content-between">
+                <div class="copyright">
+                    <p>
+                        &copy 2022 Codewithme Education Private Limited. All rights reserved
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7589bda062.js" crossorigin="anonymous"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- <script src="JS/filter.js"></script> -->
+    <!-- <script src="JS/jquery-3.6.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        var $btns = $('.filt-btn').click(function () {
+            if (this.id == 'all') {
+                $('#parent > .courses-en').fadeIn(450);
+            } else {
+                var $el = $('.' + this.id).fadeIn(450);
+                $('#parent > .courses-en').not($el).hide();
+            }
+            $btns.removeClass('active');
+            $(this).addClass('active');
+        }) 
+    </script>
+</body>
+
+</html>
