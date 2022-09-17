@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses - Codewithme</title>
+    <title>Courses - SkillsUP</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -14,50 +14,46 @@
     <div class="container-fluid sticky-top">
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-dark navigation other-nav">
-                <div class="container-fluid ">
-                    <a class="navbar-brand" href="#"><img src="img//logo.png" alt=""></a>
+                <div class="container-fluid d-flex justify-content-start" id="menu">
 
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false">
-                        <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="#"><img class="logo-img me-3" src="img//logo3.png" alt=""></a>
+          
+          
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                      aria-controls="offcanvasExample" aria-expanded="false">
+                      <span class="navbar-toggler-icon"></span>
                     </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+                    <div class="collapse navbar-collapse d-flex justify-content-between w-100" id="navbarSupportedContent">
+                      <div>
                         <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="courses.html">Courses</a>
-
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="resources.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Resources
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="articles.html">Articles</a></li>
-                                    <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
-                                    <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="courses.html">Courses</a>
+          
+                          </li>
+          
+                          <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                          </li>
+          
                         </ul>
+                      </div>
+                      <div class="d-flex justify-content-end search-login">
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success search-btn me-3" type="submit">Search</button>
                         </form>
+                        <button class="btn signin">Login</button>
+                      </div>
                     </div>
 
                     <!-- Mobile Menu Starts -->
@@ -73,18 +69,7 @@
                             <li class="nav-item">
                                 <a class="nav-link links" href="courses.html">Courses</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link links dropdown-toggle" href="resources.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Resources
-                                </a>
-                                <ul class="dropdown-menu">
-
-                                    <li><a class="dropdown-item" href="articles.html">Articles</a></li>
-                                    <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
-                                    <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-                                </ul>
-                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link links" href="pricing.html">Pricing</a>
                             </li>
@@ -95,8 +80,8 @@
                                 <a class="nav-link links" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item sign-btns">
-                                <button class="btn sign">Sign Up</button>
-                                <button class="btn sign">Login</button>
+                                <a href="register.html" class="btn sign">Sign Up</a>
+                                <a href="login.html" class="btn sign">Login</a>
                             </li>
 
                         </ul>
@@ -770,7 +755,7 @@
             <div class="d-flex justify-content-between">
                 <div class="copyright">
                     <p>
-                        &copy 2022 Codewithme Education Private Limited. All rights reserved
+                        &copy 2022 SkillsUP Education Private Limited. All rights reserved
                     </p>
                 </div>
                 <div class="social-links">

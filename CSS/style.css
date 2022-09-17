@@ -11,6 +11,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo-img{
+    height: 80px;
+}
+/* .search-login{
+    right: 0;
+    float: right;
+} */
 .top {
     background-image: url("/img/header.png");
     height: 100vh;
@@ -121,6 +128,14 @@
     /* .laptop-pic{
         display: none;
     } */
+    #navbarSupportedContent{
+        display: none !important;
+    }
+    #menu{
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
     
 }
 
@@ -228,10 +243,13 @@
     font-weight: bold !important;
     background-color: var(--primary-color) !important;
     border: none !important;
+    text-decoration: none;
+    text-align: center;
 
 }
 .signup:hover{
     opacity: 0.9 !important;
+    color: var(--black);
 }
 .google{
     background-color: var(--secondary-color) !important;
@@ -751,4 +769,60 @@
 
 .pro-card{
     background-color: var(--primary-color);
+}
+
+/* login form  */
+.log-form{
+    background: rgba(58, 58, 58, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(40, 40, 40, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    border: 1px solid var(--primary-color);
+    padding: 40px 60px !important;
+}
+.login-page{
+    width: 100%;
+    height: 100%;
+}
+.login-head{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.fields label{
+    color: var(--white);
+    font-size: 1.1rem;
+}
+.fields input{
+    padding: 10px;
+    background-color: var(--light-secondary);
+    color: var(--black);
+    font-size: 1.1rem;
+}
+.fields input:focus{
+    background-color: var(--light-secondary);
+    
+}
+.login-btn{
+    background-color: var(--primary-color) !important;
+    border: none;
+    font-size: 1.2rem !important;
+    color: var(--white) !important;
+    font-weight: 600;
+}
+.reg{
+    background-color: var(--secondary-color) !important;
+    color: var(--black) !important;
+}
+.or{
+    color: var(--white);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.sep{
+    color: var(--white);
 }

@@ -18,8 +18,9 @@
   <div class="container-fluid top">
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-dark navigation">
-        <div class="container-fluid ">
-          <a class="navbar-brand" href="#"><img src="img//logo.png" alt=""></a>
+        <div class="container-fluid d-flex justify-content-start" id="menu">
+
+          <a class="navbar-brand" href="#"><img class="logo-img me-3" src="img//logo3.png" alt=""></a>
 
 
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
@@ -27,83 +28,78 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="courses.html">Courses</a>
-                
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+          <div class="collapse navbar-collapse d-flex justify-content-between w-100" id="navbarSupportedContent">
+            <div>
+              <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="courses.html">Courses</a>
 
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success search-btn me-3" type="submit">Search</button>
-            </form>
-            <button class="btn signin">Login</button>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="d-flex justify-content-end search-login">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success search-btn me-3" type="submit">Search</button>
+              </form>
+              <a href="login.html" class="btn signin">Login</a>
+            </div>
           </div>
+
 
           <!-- Mobile Menu Starts -->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div class="d-flex justify-content-between align-items-baseline">
               <div>
-            <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link links active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="courses.html">Courses</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link links dropdown-toggle" href="resources.html" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Resources
-                </a>
-                <ul class="dropdown-menu">
-                  
-                  <li><a class="dropdown-item" href="articles.html">Articles</a></li>
-                  <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>                  
-                  <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link links active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links" href="courses.html">Courses</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link links" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item sign-btns">
+                    <a href="register.html" class="btn sign">Sign Up</a>
+                    <a href="login.html" class="btn sign">Login</a>
+                  </li>
+
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item sign-btns">
-                <button class="btn sign">Sign Up</button>
-                <button class="btn sign">Login</button>
-              </li>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                </form>
+              </div>
+              <div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
 
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success search-btn" type="submit">Search</button>
-            </form>
-          </div>
-          <div>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-        </div>
+            </div>
           </div>
           <!-- Mobile Menu Ends -->
         </div>
@@ -162,15 +158,15 @@
                 </div>
               </div>
               <div class="mb-3">
-                <input type="submit" class="form-control signup" id="exampleFormControlInput4"
-                  value="SignUp To Continue">
+                <a href="login.html" type="submit" class="form-control signup" id="exampleFormControlInput4"
+                  >SignUp To Continue</a>
               </div>
               <div class="mb-3 text-center login">
-                <a href="">Already Have an account?</a>
+                <a href="login.html">Already Have an account?</a>
               </div>
+            </form>
           </div>
 
-          </form>
         </div>
       </div>
     </div>
@@ -225,7 +221,7 @@
   <div class="container-fluid learn">
     <div class="row d-flex">
       <div class="left col-lg-6">
-        <h2>Learner outcomes on <br><span class="cwm">Codewithme</span></h2>
+        <h2>Learner outcomes on <br><span class="cwm">SkillsUP</span></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum est laboriosam illo quasi, obcaecati, qui
           nihil iste, esse omnis veniam porro magni cum libero explicabo numquam corporis perferendis recusandae
           eveniet?</p>
@@ -326,7 +322,7 @@
         <div class="card p-2 mb-3">
           <img src="img/conf.jpg" class="card-img-top event-img" alt="...">
           <div class="card-body">
-            <h6 class="card-subtitle mb-2 sub">Codewithme</h6>
+            <h6 class="card-subtitle mb-2 sub">SkillsUP</h6>
             <h5 class="card-title">Online Conferences</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
@@ -341,7 +337,7 @@
         <div class="card p-2 mb-3">
           <img src="img/code.jfif" class="card-img-top event-img" alt="...">
           <div class="card-body">
-            <h6 class="card-subtitle mb-2 sub">Codewithme</h6>
+            <h6 class="card-subtitle mb-2 sub">SkillsUP</h6>
             <h5 class="card-title">Coding Competition</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
@@ -356,7 +352,7 @@
         <div class="card p-2 mb-3">
           <img src="img/job.jpg" class="card-img-top event-img" alt="...">
           <div class="card-body">
-            <h6 class="card-subtitle mb-2 sub">Codewithme</h6>
+            <h6 class="card-subtitle mb-2 sub">SkillsUP</h6>
             <h5 class="card-title">Job Fair</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
@@ -381,81 +377,88 @@
         </div>
       </div>
       <div class="container-fluid" id="reviews">
-      <div class="d-flex mt-5 in-review align-items-center">
-        <div class="rev-box me-5">
-          <h3 class="mb-3">Muhammad Omer</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <i class="fa fa-star-half-full checked"></i>
+        <div class="d-flex mt-5 in-review align-items-center">
+          <div class="rev-box me-5">
+            <h3 class="mb-3">Muhammad Omer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel
+              nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star-half-full checked"></i>
+          </div>
+          <div class="rev-box me-5">
+            <h3 class="mb-3">Muhammad Hassan</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel
+              nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="rev-box me-5">
+            <h3 class="mb-3">Nasrullah</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel
+              nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star-half-full checked"></i>
+          </div>
+          <div class="rev-box me-5">
+            <h3 class="mb-3">Ali Khan</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel
+              nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="rev-box me-5">
+            <h3 class="mb-3">Hasnain</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel
+              nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="rev-box me-5">
+            <h3 class="mb-3">Muhammad Usama</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel
+              nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star-half-full checked"></i>
+          </div>
+          <div class="rev-box me-5">
+            <h3 class="mb-3">Ahmed</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel
+              nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
         </div>
-        <div class="rev-box me-5">
-          <h3 class="mb-3">Muhammad Hassan</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-        </div>
-        <div class="rev-box me-5">
-          <h3 class="mb-3">Nasrullah</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <i class="fa fa-star-half-full checked"></i>
-        </div>
-        <div class="rev-box me-5">
-          <h3 class="mb-3">Ali Khan</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-        </div>
-        <div class="rev-box me-5">
-          <h3 class="mb-3">Hasnain</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-        </div>
-        <div class="rev-box me-5">
-          <h3 class="mb-3">Muhammad Usama</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <i class="fa fa-star-half-full checked"></i>
-        </div>
-        <div class="rev-box me-5">
-          <h3 class="mb-3">Ahmed</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui vero aperiam pariatur animi vel nihil maiores quae asperiores harum. Lorem ipsum dolor sit amet.</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-        </div>
-        
       </div>
-    </div>
     </div>
   </div>
   <div class="container-fluid learn main-join">
     <div class="row">
       <div class="d-flex join">
-          <h2 class="join-head">Online Coaching lessons for remote learning</h2>
-          <p class="join-para">100% online learning from the world's best teachers and experts</p>
-          <button class="btn learn-btn">Join Today</button>
+        <h2 class="join-head">Online Coaching lessons for remote learning</h2>
+        <p class="join-para">100% online learning from the world's best teachers and experts</p>
+        <button class="btn learn-btn">Join Today</button>
       </div>
     </div>
   </div>
@@ -464,49 +467,89 @@
       <div class="col-md-6 col-lg-3">
         <h3>Company</h3>
         <ul class="foot-list">
-          <a href=""><li>About</li></a>
-          <a href=""><li>Resources</li></a>
-          <a href=""><li>Pricing</li></a>
-          <a href=""><li>Blogs</li></a>
-          <a href=""><li>Affiliates</li></a>
+          <a href="">
+            <li>About</li>
+          </a>
+          <a href="">
+            <li>Resources</li>
+          </a>
+          <a href="">
+            <li>Pricing</li>
+          </a>
+          <a href="">
+            <li>Blogs</li>
+          </a>
+          <a href="">
+            <li>Affiliates</li>
+          </a>
         </ul>
       </div>
       <div class="col-md-6 col-lg-3">
         <h3>Community</h3>
         <ul class="foot-list">
-          <a href=""><li>Go Premium</li></a>
-          <a href=""><li>Team Plans</li></a>
-          <a href=""><li>Refer a Friend</li></a>
-          <a href=""><li>Gift Cards</li></a>
-          <a href=""><li>Scholarships</li></a>
-          <a href=""><li>Free Classes</li></a>
+          <a href="">
+            <li>Go Premium</li>
+          </a>
+          <a href="">
+            <li>Team Plans</li>
+          </a>
+          <a href="">
+            <li>Refer a Friend</li>
+          </a>
+          <a href="">
+            <li>Gift Cards</li>
+          </a>
+          <a href="">
+            <li>Scholarships</li>
+          </a>
+          <a href="">
+            <li>Free Classes</li>
+          </a>
         </ul>
       </div>
       <div class="col-md-6 col-lg-3">
         <h3>Teaching</h3>
         <ul class="foot-list">
-          <a href=""><li>Become a Teacher</li></a>
-          <a href=""><li>Teaching Academy</li></a>
-          <a href=""><li>Teacher Handbook</li></a>
-          <a href=""><li>Partnerships</li></a>
+          <a href="">
+            <li>Become a Teacher</li>
+          </a>
+          <a href="">
+            <li>Teaching Academy</li>
+          </a>
+          <a href="">
+            <li>Teacher Handbook</li>
+          </a>
+          <a href="">
+            <li>Partnerships</li>
+          </a>
         </ul>
       </div>
       <div class="col-md-6 col-lg-3">
         <h3>Support</h3>
         <ul class="foot-list">
-          <a href=""><li>Support</li></a>
-          <a href=""><li>Contact Us</li></a>
-          <a href=""><li>System Requirements</li></a>
-          <a href=""><li>Register Activation Key</li></a>
-          <a href=""><li>Site feedback</li></a>
+          <a href="">
+            <li>Support</li>
+          </a>
+          <a href="">
+            <li>Contact Us</li>
+          </a>
+          <a href="">
+            <li>System Requirements</li>
+          </a>
+          <a href="">
+            <li>Register Activation Key</li>
+          </a>
+          <a href="">
+            <li>Site feedback</li>
+          </a>
         </ul>
       </div>
       <hr class="mt-4">
       <div class="d-flex justify-content-between">
         <div class="copyright">
           <p>
-          &copy 2022 Codewithme Education Private Limited. All rights reserved
-        </p>
+            &copy 2022 SkillsUP Education Private Limited. All rights reserved
+          </p>
         </div>
         <div class="social-links">
           <a href="#" class="fa fa-facebook"></a>
