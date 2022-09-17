@@ -42,7 +42,7 @@
 }
 
 .banner {
-    padding: 20px 40px;
+    padding: 15px 40px;
 }
 
 .heading {
@@ -82,13 +82,19 @@
     border: 2px solid var(--primary-color) !important;
     color: var(--primary-color) !important;
 }
+.signin{
+    background-color: var(--secondary-color) !important;
+    color: var(--black) !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
 .sign:hover{
     background-color: var(--primary-color) !important;
     color: var(--black) !important;
 }
 @media(max-width: 1350px){
     .form{
-        padding: 5px 10px !important;
+        padding: 5px 10px 0 10px !important;
     }
 }
 @media(max-width: 1187px){
@@ -445,6 +451,7 @@
     color: var(--white);
 
 }
+
 /* Courses page CSS */
 .courses-page{
     padding: 40px 10px;
@@ -455,6 +462,7 @@
     text-transform: capitalize;
     margin-bottom: 20px;
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .filter-col{
@@ -481,6 +489,76 @@
 .filt-btn:hover{
     border: none !important;
     font-size: 1.2rem;
+}
+
+.card-title{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text{
+    text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.mob-sidebar{
+    display: none;
+}
+.mod-head{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.mod-body p{
+    font-size: 1.1rem;
+}
+.duration{
+    margin-top: 25px;
+}
+.dur-head{
+    font-size: 1.5rem;
+    
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.dur-p{
+    font-size: 1.2rem !important;
+}
+
+@media(max-width: 991.5px){
+    .filter-col{
+        display: none;
+    }
+    .mob-sidebar{
+        display: block;
+    }
+}
+.acc-btn{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    border: none;
+}
+.acc-btn:not(.collapsed){
+    color: var(--black) !important;
+    background-color: var(--secondary-color);
+}
+.acc-btn:focus{
+    border-color: none;
+    box-shadow: none;
+}
+.acc-body{
+    background-color: var(--light-primary);
+    border: 3px solid var(--primary-color);
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* About section  */
@@ -550,4 +628,127 @@
     background-color: var(--secondary-color);
     border: none;
     color: var(--white);
+}
+
+/* pricing page  */
+.pricing{
+    background-color: var(--light-primary);
+    padding: 50px 60px;
+}
+.ready{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.plan{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+.plan-btn.active{
+    background-color: var(--secondary-color) !important;
+    color: var(--black) !important;
+}
+.plan-btn{
+    color: var(--secondary-color) !important;
+}
+.price-card{
+    /* min-height: 985px; */
+    height: auto;
+    padding: 10px;
+}
+.price-title{
+    color: var(--black);
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.pro-title{
+    color: var(--white);
+}
+.hand{
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+.pro{
+    font-size: 2rem;
+    color: var(--black);
+}
+.price-line{
+    color: var(--black);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.pro-line{
+    color: var(--white);
+}
+.price-tag{
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: bold;
+}
+.pro-tag{
+    color: var(--white);
+}
+.price-tag sub{
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+.pro-tag sub{
+    color: var(--black);
+}
+.price-tag span{
+    color: var(--secondary-color);
+}
+.pro-tag span{
+    color: var(--black);
+}
+
+.price-btn{
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 15px;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+.pro-btn{
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+.price-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
+    opacity: 0.9;
+}
+.pro-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+.bas-in{
+    color: var(--black);
+    font-size: 1.3rem;
+}
+.pro-in{
+    color: var(--white);
+}
+.features i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.pro-feat i{
+    color: var(--black);
+}
+.features p{
+    color: var(--black);
+    font-size: 1.1rem;
+}
+.pro-feat p{
+    color: var(--white);
+}
+
+.pro-card{
+    background-color: var(--primary-color);
 }
