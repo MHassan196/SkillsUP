@@ -19,7 +19,7 @@
     float: right;
 } */
 .top {
-    background-image: url("/img/header.png");
+    background-image: url("header.png");
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -33,7 +33,7 @@
     width: 100vw;
 }
 .other-nav{
-    background-image: url('/img/header.png');
+    background-image: url('header.png');
 }
 
 .navbar-collapse {
@@ -663,7 +663,7 @@
     text-align: center;
 }
 .footer{
-    background-image: url('/img/bghead.jpg');
+    background-image: url('bghead.jpg');
     color: var(--white);
     padding: 60px 130px 30px 130px !important;
 }
@@ -844,6 +844,7 @@
 }
 .top-alert{
     top: 106px;
+    background-color: var(--secondary-color);
 }
 
 /* About section  */
@@ -1096,6 +1097,14 @@
     opacity: 0.9;
 }
 .pro-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+.price-btn:focus{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.pro-btn:focus{
     background-color: var(--secondary-color);
     color: var(--black);
 }
