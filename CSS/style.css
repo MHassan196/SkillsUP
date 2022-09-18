@@ -175,7 +175,7 @@
     .text{
         font-size: 22px !important;
     }
-    .btns button{
+    .btns a{
         padding: 15px 0 !important;
 
     }
@@ -206,7 +206,7 @@
     }
 }
 @media(max-width: 571px){
-    .btns button{
+    .btns a{
         width: 50% !important;
         padding: 10px 0 !important;
     }
@@ -234,14 +234,14 @@
     }
 }
 @media(max-width: 360px){
-    .btns button{
+    .btns a{
         width: 70% !important;
         padding: 10px 0 !important;
     }
 }
 
 @media(max-width: 290px){
-    .btns button{
+    .btns a{
         width: 80% !important;
         padding: 10px 0 !important;
     }
@@ -256,7 +256,7 @@
     margin-top: 10px;
 }
 
-.btns button {
+.btns a {
     width: 33%;
     background: var(--secondary-color);
     height: auto;
@@ -280,7 +280,7 @@
     background-color: var(--primary-color) !important;
 }
 
-.btns button:hover {
+.btns a:hover {
     background-color: var(--secondary-color);
     opacity: 0.9;
 }
@@ -962,6 +962,11 @@
     font-weight: bold;
 }
 .send:hover{
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--white);
+}
+.send:focus{
     background-color: var(--secondary-color);
     border: none;
     color: var(--white);
