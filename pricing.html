@@ -1,597 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - SkillsUP</title>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - SkillsUP</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-    <div class="container-fluid sticky-top">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-dark navigation other-nav">
-              <div class="container-fluid d-flex justify-content-start" id="menu">
+  <div class="container-fluid sticky-top">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark navigation other-nav">
+        <div class="container-fluid d-flex justify-content-start" id="menu">
 
-                <a class="navbar-brand" href="#"><img class="logo-img me-3" src="img//logo3.png" alt=""></a>
-      
-      
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                  aria-controls="offcanvasExample" aria-expanded="false">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-      
-                <div class="collapse navbar-collapse d-flex justify-content-between w-100" id="navbarSupportedContent">
-                  <div>
-                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="courses.html">Courses</a>
-      
-                      </li>
-      
-                      <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">Pricing</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
-      
-                    </ul>
-                  </div>
-                  <div class="d-flex justify-content-end search-login">
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success search-btn me-3" type="submit">Search</button>
-                    </form>
-                    <button class="btn signin">Login</button>
-                  </div>
-                </div>
+          <a class="navbar-brand" href="#"><img class="logo-img me-3" src="img//logo3.png" alt=""></a>
 
-                    <!-- Mobile Menu Starts -->
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
-                        <div class="d-flex justify-content-between align-items-baseline">
 
-                        <div>
-                        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link links active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link links" href="courses.html">Courses</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link links" href="pricing.html">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link links" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link links" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item sign-btns">
-                              <a href="register.html" class="btn sign">Sign Up</a>
-                              <a href="login.html" class="btn sign">Login</a>
-                            </li>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success search-btn" type="submit">Search</button>
-                        </form>
-                    </div>
-                        <div>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                    </div>
-                    </div>
-                    <!-- Mobile Menu Ends -->
-                </div>
-            </nav>
-        </div>
-    </div>
+          <div class="collapse navbar-collapse d-flex justify-content-between w-100" id="navbarSupportedContent">
+            <div>
+              <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="courses.html">Courses</a>
 
-    <div class="container-fluid pricing">
-        <div class="row">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <h2 class="ready">Ready to get Started?</h2>
-                <p class="plan">Choose a plan according to your needs</p>
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button class="nav-link plan-btn active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Monthly</button>
-                      <button class="nav-link plan-btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Yearly</button>
-                     
-                    </div>
-                  </nav>
-                  
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+              </ul>
             </div>
-            <div class="tab-content mt-5" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <div class="d-flex justify-content-end search-login">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success search-btn me-3" type="submit">Search</button>
+              </form>
+              <button class="btn signin">Login</button>
+            </div>
+          </div>
 
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                            <div class="card price-card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-baseline">
-                                        <i class='far fa-handshake hand me-3'></i>
-                                  <h5 class="card-title price-title">Basic</h5>
-                                    </div>
-                                  <p class="card-text price-line">Perfect to get started</p>
-                                  <h1 class="price-tag"><span class="me-2">$</span>10 <sub>per month</sub></h1>
-                                
-                                  <a href="#" class="btn price-btn mt-4">Try 7 days for free!</a>
+          <!-- Mobile Menu Starts -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="d-flex justify-content-between align-items-baseline">
 
-                                  <h3 class="bas-in mt-4">Basic Includes</h3>
-                                  <div class="d-flex align-items-baseline mt-3 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Can Enroll in 5+ courses</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Verified Certificates upon course completion</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>CMS integration</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                      <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                      <p>Email & SMS remianders</p>
-                                    </div>
-                                    <div class="d-flex align-items-baseline mt-2 features">
-                                        <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                        <p>Mobile apps (iOS & Android)</p>
-                                    </div>
-                                    <div class="d-flex align-items-baseline mt-2 features">
-                                      <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                      <p>Priority technical support for learners</p>
-                                    </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Industry skill insights and benchmarking</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Skills-transformation planning</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>100+ SkillSets: job-based content recommendations</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Daily performance reports</p>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                            <div class="card price-card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-baseline">
-                                        <i class='fas fa-tag hand me-3'></i>
-                                  <h5 class="card-title price-title">Standard</h5>
-                                    </div>
-                                  <p class="card-text price-line">Best for professionals</p>
-                                  <h1 class="price-tag"><span class="me-2">$</span>18 <sub>per month</sub></h1>
-                                
-                                  <a href="#" class="btn price-btn mt-4">Get Started</a>
+              <div>
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link links active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links" href="courses.html">Courses</a>
+                  </li>
 
-                                  <h3 class="bas-in mt-4">Standard Includes</h3>
-                                  <div class="d-flex align-items-baseline mt-3 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Can Enroll in 12+ courses</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Verified Certificates upon course completion</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>CMS integration</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Priority technical support for learners</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Email & SMS remianders</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Mobile apps (iOS & Android)</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Industry skill insights and benchmarking</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Skills-transformation planning</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>100+ SkillSets: job-based content recommendations</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Daily performance reports</p>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                            <div class="card price-card pro-card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-baseline">
-                                        <i class='fa fa-bolt pro me-3'></i>
-                                  <h5 class="card-title price-title pro-title">Pro</h5>
-                                    </div>
-                                  <p class="card-text price-line pro-line">Toolset for hard players</p>
-                                  <h1 class="price-tag pro-tag"><span class="me-2">$</span>35 <sub>per month</sub></h1>
-                                
-                                  <a href="#" class="btn price-btn pro-btn mt-4">Get Started</a>
+                  <li class="nav-item">
+                    <a class="nav-link links" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item sign-btns">
+                    <a href="register.html" class="btn sign">Sign Up</a>
+                    <a href="login.html" class="btn sign">Login</a>
+                  </li>
 
-                                  <h3 class="bas-in pro-in mt-4">Pro Includes</h3>
-                                  <div class="d-flex align-items-baseline mt-3 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Can Enroll in Unlimited courses</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Verified Certificates upon course completion</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>CMS integration</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Priority technical support for learners</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Email & SMS remianders</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Mobile apps (iOS & Android)</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Industry skill insights and benchmarking</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Skills-transformation planning</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>100+ SkillSets: job-based content recommendations</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Daily performance reports</p>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                            <div class="card price-card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-baseline">
-                                        <i class='far fa-handshake hand me-3'></i>
-                                  <h5 class="card-title price-title">Basic</h5>
-                                    </div>
-                                  <p class="card-text price-line">Perfect to get started</p>
-                                  <h1 class="price-tag"><span class="me-2">$</span>100 <sub>per year</sub></h1>
-                                
-                                  <a href="#" class="btn price-btn mt-4">Try 1 month for free!</a>
-
-                                  <h3 class="bas-in mt-4">Basic Includes</h3>
-                                  <div class="d-flex align-items-baseline mt-3 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Can Enroll in 8+ courses</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Verified Certificates upon course completion</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>CMS integration</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                      <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                      <p>Email & SMS remianders</p>
-                                    </div>
-                                    <div class="d-flex align-items-baseline mt-2 features">
-                                        <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                        <p>Mobile apps (iOS & Android)</p>
-                                    </div>
-                                    <div class="d-flex align-items-baseline mt-2 features">
-                                      <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                      <p>Priority technical support for learners</p>
-                                    </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Industry skill insights and benchmarking</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Skills-transformation planning</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>100+ SkillSets: job-based content recommendations</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Daily performance reports</p>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                            <div class="card price-card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-baseline">
-                                        <i class='fas fa-tag hand me-3'></i>
-                                  <h5 class="card-title price-title">Standard</h5>
-                                    </div>
-                                  <p class="card-text price-line">Best for professionals</p>
-                                  <h1 class="price-tag"><span class="me-2">$</span>180 <sub>per year</sub></h1>
-                                
-                                  <a href="#" class="btn price-btn mt-4">Get Started</a>
-
-                                  <h3 class="bas-in mt-4">Standard Includes</h3>
-                                  <div class="d-flex align-items-baseline mt-3 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Can Enroll in 20+ courses</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Verified Certificates upon course completion</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>CMS integration</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Priority technical support for learners</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Email & SMS remianders</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Mobile apps (iOS & Android)</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Industry skill insights and benchmarking</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Skills-transformation planning</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>100+ SkillSets: job-based content recommendations</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features">
-                                    <i class="fa fa-close me-4" aria-hidden="true"></i>
-                                    <p>Daily performance reports</p>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
-                            <div class="card price-card pro-card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-baseline">
-                                        <i class='fa fa-bolt pro me-3'></i>
-                                  <h5 class="card-title price-title pro-title">Pro</h5>
-                                    </div>
-                                  <p class="card-text price-line pro-line">Toolset for hard players</p>
-                                  <h1 class="price-tag pro-tag"><span class="me-2">$</span>350 <sub>per year</sub></h1>
-                                
-                                  <a href="#" class="btn price-btn pro-btn mt-4">Get Started</a>
-
-                                  <h3 class="bas-in pro-in mt-4">Pro Includes</h3>
-                                  <div class="d-flex align-items-baseline mt-3 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Can Enroll in Unlimited courses</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Verified Certificates upon course completion</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>CMS integration</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Priority technical support for learners</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Email & SMS remianders</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Mobile apps (iOS & Android)</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Industry skill insights and benchmarking</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Skills-transformation planning</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>100+ SkillSets: job-based content recommendations</p>
-                                  </div>
-                                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
-                                    <i class="fa fa-check me-3" aria-hidden="true"></i>
-                                    <p>Daily performance reports</p>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-
-                </div>
-                
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                </form>
               </div>
+              <div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu Ends -->
         </div>
+      </nav>
     </div>
+  </div>
+
+  <div class="container-fluid pricing">
+    <div class="row">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h2 class="ready">Ready to get Started?</h2>
+        <p class="plan">Choose a plan according to your needs</p>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link plan-btn active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+              type="button" role="tab" aria-controls="nav-home" aria-selected="true">Monthly</button>
+            <button class="nav-link plan-btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Yearly</button>
+
+          </div>
+        </nav>
+
+      </div>
+      <div class="tab-content mt-5" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+          tabindex="0">
+
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
+              <div class="card price-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-baseline">
+                    <i class='far fa-handshake hand me-3'></i>
+                    <h5 class="card-title price-title">Basic</h5>
+                  </div>
+                  <p class="card-text price-line">Perfect to get started</p>
+                  <h1 class="price-tag"><span class="me-2">$</span>10 <sub>per month</sub></h1>
+
+                  <a href="#" class="btn price-btn mt-4">Try 7 days for free!</a>
+
+                  <h3 class="bas-in mt-4">Basic Includes</h3>
+                  <div class="d-flex align-items-baseline mt-3 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Can Enroll in 5+ courses</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Verified Certificates upon course completion</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>CMS integration</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Email & SMS remianders</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Mobile apps (iOS & Android)</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Priority technical support for learners</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Industry skill insights and benchmarking</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Skills-transformation planning</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>100+ SkillSets: job-based content recommendations</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Daily performance reports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
+              <div class="card price-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-baseline">
+                    <i class='fas fa-tag hand me-3'></i>
+                    <h5 class="card-title price-title">Standard</h5>
+                  </div>
+                  <p class="card-text price-line">Best for professionals</p>
+                  <h1 class="price-tag"><span class="me-2">$</span>18 <sub>per month</sub></h1>
+
+                  <a href="#" class="btn price-btn mt-4">Get Started</a>
+
+                  <h3 class="bas-in mt-4">Standard Includes</h3>
+                  <div class="d-flex align-items-baseline mt-3 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Can Enroll in 12+ courses</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Verified Certificates upon course completion</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>CMS integration</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Priority technical support for learners</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Email & SMS remianders</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Mobile apps (iOS & Android)</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Industry skill insights and benchmarking</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Skills-transformation planning</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>100+ SkillSets: job-based content recommendations</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Daily performance reports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
+              <div class="card price-card pro-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-baseline">
+                    <i class='fa fa-bolt pro me-3'></i>
+                    <h5 class="card-title price-title pro-title">Pro</h5>
+                  </div>
+                  <p class="card-text price-line pro-line">Toolset for hard players</p>
+                  <h1 class="price-tag pro-tag"><span class="me-2">$</span>35 <sub>per month</sub></h1>
+
+                  <a href="#" class="btn price-btn pro-btn mt-4">Get Started</a>
+
+                  <h3 class="bas-in pro-in mt-4">Pro Includes</h3>
+                  <div class="d-flex align-items-baseline mt-3 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Can Enroll in Unlimited courses</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Verified Certificates upon course completion</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>CMS integration</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Priority technical support for learners</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Email & SMS remianders</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Mobile apps (iOS & Android)</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Industry skill insights and benchmarking</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Skills-transformation planning</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>100+ SkillSets: job-based content recommendations</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Daily performance reports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
+              <div class="card price-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-baseline">
+                    <i class='far fa-handshake hand me-3'></i>
+                    <h5 class="card-title price-title">Basic</h5>
+                  </div>
+                  <p class="card-text price-line">Perfect to get started</p>
+                  <h1 class="price-tag"><span class="me-2">$</span>100 <sub>per year</sub></h1>
+
+                  <a href="#" class="btn price-btn mt-4">Try 1 month for free!</a>
+
+                  <h3 class="bas-in mt-4">Basic Includes</h3>
+                  <div class="d-flex align-items-baseline mt-3 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Can Enroll in 8+ courses</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Verified Certificates upon course completion</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>CMS integration</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Email & SMS remianders</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Mobile apps (iOS & Android)</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Priority technical support for learners</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Industry skill insights and benchmarking</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Skills-transformation planning</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>100+ SkillSets: job-based content recommendations</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Daily performance reports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
+              <div class="card price-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-baseline">
+                    <i class='fas fa-tag hand me-3'></i>
+                    <h5 class="card-title price-title">Standard</h5>
+                  </div>
+                  <p class="card-text price-line">Best for professionals</p>
+                  <h1 class="price-tag"><span class="me-2">$</span>180 <sub>per year</sub></h1>
+
+                  <a href="#" class="btn price-btn mt-4">Get Started</a>
+
+                  <h3 class="bas-in mt-4">Standard Includes</h3>
+                  <div class="d-flex align-items-baseline mt-3 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Can Enroll in 20+ courses</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Verified Certificates upon course completion</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>CMS integration</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Priority technical support for learners</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Email & SMS remianders</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Mobile apps (iOS & Android)</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Industry skill insights and benchmarking</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Skills-transformation planning</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>100+ SkillSets: job-based content recommendations</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features">
+                    <i class="fa fa-close me-4" aria-hidden="true"></i>
+                    <p>Daily performance reports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 mb-3">
+              <div class="card price-card pro-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-baseline">
+                    <i class='fa fa-bolt pro me-3'></i>
+                    <h5 class="card-title price-title pro-title">Pro</h5>
+                  </div>
+                  <p class="card-text price-line pro-line">Toolset for hard players</p>
+                  <h1 class="price-tag pro-tag"><span class="me-2">$</span>350 <sub>per year</sub></h1>
+
+                  <a href="#" class="btn price-btn pro-btn mt-4">Get Started</a>
+
+                  <h3 class="bas-in pro-in mt-4">Pro Includes</h3>
+                  <div class="d-flex align-items-baseline mt-3 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Can Enroll in Unlimited courses</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Verified Certificates upon course completion</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>CMS integration</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Priority technical support for learners</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Email & SMS remianders</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Mobile apps (iOS & Android)</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Industry skill insights and benchmarking</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Skills-transformation planning</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Analytics for skills learned, proficiency, and time to mastery</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>100+ SkillSets: job-based content recommendations</p>
+                  </div>
+                  <div class="d-flex align-items-baseline mt-2 features pro-feat">
+                    <i class="fa fa-check me-3" aria-hidden="true"></i>
+                    <p>Daily performance reports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
-    <div class="container-fluid course footer">
-        <div class="row in-footer">
-            <div class="col-md-6 col-lg-3">
-                <h3>Company</h3>
-                <ul class="foot-list">
-                    <a href="">
-                        <li>About</li>
-                    </a>
-                    <a href="">
-                        <li>Resources</li>
-                    </a>
-                    <a href="">
-                        <li>Pricing</li>
-                    </a>
-                    <a href="">
-                        <li>Blogs</li>
-                    </a>
-                    <a href="">
-                        <li>Affiliates</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <h3>Community</h3>
-                <ul class="foot-list">
-                    <a href="">
-                        <li>Go Premium</li>
-                    </a>
-                    <a href="">
-                        <li>Team Plans</li>
-                    </a>
-                    <a href="">
-                        <li>Refer a Friend</li>
-                    </a>
-                    <a href="">
-                        <li>Gift Cards</li>
-                    </a>
-                    <a href="">
-                        <li>Scholarships</li>
-                    </a>
-                    <a href="">
-                        <li>Free Classes</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <h3>Teaching</h3>
-                <ul class="foot-list">
-                    <a href="">
-                        <li>Become a Teacher</li>
-                    </a>
-                    <a href="">
-                        <li>Teaching Academy</li>
-                    </a>
-                    <a href="">
-                        <li>Teacher Handbook</li>
-                    </a>
-                    <a href="">
-                        <li>Partnerships</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <h3>Support</h3>
-                <ul class="foot-list">
-                    <a href="">
-                        <li>Support</li>
-                    </a>
-                    <a href="">
-                        <li>Contact Us</li>
-                    </a>
-                    <a href="">
-                        <li>System Requirements</li>
-                    </a>
-                    <a href="">
-                        <li>Register Activation Key</li>
-                    </a>
-                    <a href="">
-                        <li>Site feedback</li>
-                    </a>
-                </ul>
-            </div>
-            <hr class="mt-4">
-            <div class="d-flex justify-content-between">
-                <div class="copyright">
-                    <p>
-                        &copy 2022 SkillsUP Education Private Limited. All rights reserved
-                    </p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-google"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                </div>
-            </div>
+  <div class="container-fluid course footer">
+    <div class="row in-footer">
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h3>Company</h3>
+        <ul class="foot-list">
+          <a href="">
+            <li>About</li>
+          </a>
+          <a href="">
+            <li>Resources</li>
+          </a>
+          <a href="">
+            <li>Pricing</li>
+          </a>
+          <a href="">
+            <li>Blogs</li>
+          </a>
+          <a href="">
+            <li>Affiliates</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h3>Community</h3>
+        <ul class="foot-list">
+          <a href="">
+            <li>Go Premium</li>
+          </a>
+          <a href="">
+            <li>Team Plans</li>
+          </a>
+          <a href="">
+            <li>Refer a Friend</li>
+          </a>
+          <a href="">
+            <li>Gift Cards</li>
+          </a>
+          <a href="">
+            <li>Scholarships</li>
+          </a>
+          <a href="">
+            <li>Free Classes</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h3>Teaching</h3>
+        <ul class="foot-list">
+          <a href="">
+            <li>Become a Teacher</li>
+          </a>
+          <a href="">
+            <li>Teaching Academy</li>
+          </a>
+          <a href="">
+            <li>Teacher Handbook</li>
+          </a>
+          <a href="">
+            <li>Partnerships</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h3>Support</h3>
+        <ul class="foot-list">
+          <a href="">
+            <li>Support</li>
+          </a>
+          <a href="">
+            <li>Contact Us</li>
+          </a>
+          <a href="">
+            <li>System Requirements</li>
+          </a>
+          <a href="">
+            <li>Register Activation Key</li>
+          </a>
+          <a href="">
+            <li>Site feedback</li>
+          </a>
+        </ul>
+      </div>
+      <hr class="mt-4">
+      <div class="last-footer d-flex justify-content-between align-items-center">
+        <div class="copyright">
+          <p>
+            &copy 2022 SkillsUP Education Private Limited. All rights reserved
+          </p>
         </div>
+        <div class="social-links">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </div>
     </div>
-    
-    <script src="https://kit.fontawesome.com/7589bda062.js" crossorigin="anonymous"></script>
-    <script src="JS/bootstrap.bundle.min.js"></script>
+  </div>
+
+  <script src="https://kit.fontawesome.com/7589bda062.js" crossorigin="anonymous"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
